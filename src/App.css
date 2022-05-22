@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+/* @font-face {
+  font-family: "GoldmanBold";
+  src: local("GoldmanBold"),
+   url("./fonts/Goldman/Goldman-Bold.ttf") format("truetype");
+  font-weight: bold;
+  } */
+
+  @font-face {
+    font-family: "diloWorld";
+    src: local("diloWorld"), url("./fonts/diloWorld.ttf") format("truetype");
+}
+
+
+html{
+  height: 100%;
+  font-size: 10px;
+/* font-family:"diloWorld"; */
+
+  letter-spacing: 3px;
+}
+body{
+  height: 100vh;
+}
+#root{
+  height: 100%;
+}
+.container{
+  background-color: lightblue;
+  width: 100vw;
+  height:100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+h1{ 
+  color:green;
+}
+.gameBoard{
+  display:flex;
+  flex-direction: column;
+  width:20rem;
+  height:30rem;
+  border:2px solid;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.player{
+  border: 2px solid black;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  width:30rem;
+  height:40rem;
+  gap:1.5rem;
+  text-align: center;
+}
+.player > div{
+  width: 10rem;
+  height: 10rem;
+  max-width: max-content;
+  max-height: max-content;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
